@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+body {color: #555; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size:16px; }
+
+.s-lib-cmd-bar, .ui-dialog {
+	font-size:12px;
+	
+}
+
+
+
+
+h2 {
+	font-size: 32px;
+    line-height: 42px;
+    font-weight: 100;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+.ui-widget-content a, a {color:#8A100B}
+.ui-widget-content a:hover, .ui-widget-content a:focus, a:hover, a:focus {color: #8A100B;}
+h1 {    
+	font-family: 'OpenSans-Light',Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+	color:#555;
+	margin-bottom:20px;
+	line-height:46px;
+	margin-top:20px;
+	
+	}
+
+#s-lc-public-bc {
+	width:100%;
+	margin:0px;
+}
+	
+	
+#s-lc-public-bc .breadcrumb>li+li:before {color:#fff; content:"»";}
+#s-lc-public-bc .breadcrumb>.active {color:#fff;}
+#s-lc-public-bc .breadcrumb a {color:#fff; text-decoration:none;}
+#s-lc-public-bc .breadcrumb a:hover, .s-lib-bc-list a:focus, #s-lc-public-bc .breadcrumb>.active {
+	border-bottom: solid 4px #e74c3c;
+}
+#s-lc-public-bc .breadcrumb a:hover, .s-lib-bc-list a:focus {
+	padding:10px 0;
+}
+
+
+#s-lib-public-header {
+`	height: 44px;
+    width: 100%;
+	padding-bottom:0px;
+}
+#s-lc-public-bc .breadcrumb {
+	width: 100%;
+	background: #726158;
+	border-radius:0px;
+	
+}
+#s-lc-public-bc .breadcrumb li{
+    display: inline-block;
+    height: 100%;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+	padding: 12px 0;
+}
+#s-lc-public-bc .breadcrumb {
+	width:100%
+	
+}
+
+
+#s-lc-public-bc .breadcrumb {
+    list-style: none;
+    margin: auto;
+    height: 44px;
+	max-width: 1230px;
+}
+#s-lc-public-bc .col-md-12 {
+	padding:0px;
+}
+
+.container:before {
+	background-color: #726158;
+    height: 44px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    display: block;
+}
+.ui-datepicker {
+	font-size: 12px;
+}
+#s-lc-rm-time-grid {
+	font-size: 12px;
+}
+.label-rm-avail{
+	font-size:16px;
+}
+#s-lc-rm-tg-roomleg {
+    margin: 20px;
+}
+@media (min-width: 1200px) {
+.container {
+    width: auto;
+	margin: auto;
+	padding: 0 12px;
+	max-width: 1230px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+}
+@media (max-width: 500px)
+{
+	#s-lc-public-bc {
+		display:none;
+		
+	}
+}

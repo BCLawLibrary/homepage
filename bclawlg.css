@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+body {color: #555; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size:16px;}
+
+#s-lg-public-skiplink {
+	position:absolute;
+	left:-500px;
+}
+
+.s-lib-cmd-bar, .ui-dialog {
+	font-size:12px;
+	
+}
+
+
+
+
+.s-lib-public-side-header h2 {
+	font-size: 32px;
+    line-height: 42px;
+    font-weight: 100;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.s-lib-box .s-lib-box-title {
+	font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+.ui-widget-content a, a {color:#8A100B}
+.ui-widget-content a:hover, .ui-widget-content a:focus, a:hover, a:focus {color: #8A100B;}
+h1#s-lg-guide-name, h1#s-lib-public-header-title {    
+	font-family: 'OpenSans-Light',Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+	color:#555;
+	margin-bottom:20px;
+	line-height:46px;
+	margin-top:20px;
+	
+	}
+.s-lib-box {box-shadow: 0 8px 6px -6px #DFDDCF;}
+.s-lib-box-title {font-family: 'Open Sans', Helvetica, Arial, sans-serif;}
+.s-lib-box-content {font-family: 'Open Sans', Helvetica, Arial, sans-serif;}
+.s-lib-footer {border-top: 1px #B99B73; background-color:transparent;}
+.s-lib-public-side-header{font-family: 'Open Sans', Helvetica, Arial, sans-serif; color:#501315;}
+
+.s-lg-guide-label {color:  #B99B73}
+.s-lg-text-greyout {color: #B99B73;}
+.nav-pills li.active a, .nav-pills li.active a:focus, .nav-pills li.active a:hover  {background-color:#B29D6C;}
+.nav-pills li a:focus, .nav-pills li a:hover {background-color:#DFDDCF;}
+.btn-info {background-color:#501315; border-color:#2F0000;}
+.btn-info:hover, .btn-info:focus {background-color:#8A100B; border-color:#6B0000;}
+#s-lg-az-nav, #s-lg-er-nav, #s-lg-hp-nav, #s-lg-profile-nav, #s-lg-srch-nav, .navbar-default  {background-color:#DFDDCF;}
+#s-lg-er-nav-bottom, #s-lg-hp-nav-bottom, #s-lg-srch-nav-bottom {background-color:#DFDDCF;}
+#s-lg-az-count {background-color:#B29D6C;}
+#s-lg-db-label-text {color:#B29D6C;}
+#s-lg-hp-nav-bottom {
+	background-color:#B99B73;
+	color:#fff;
+ }
+
+
+.nav .s-lg-index-nav-btn>button {
+	color:#726158;
+	
+}
+
+.nav-pills>li.active>button, .nav-pills>li.active>button:focus, .nav-pills>li.active>button:hover {
+	background-color: #726158;
+	color: #DFDDCF;
+	
+}
+
+
+.label-info {background-color:#8A100B;}
+.label-info[href]:focus, .label-info[href]:hover {background-color:#BB2800;}
+.breadcrumb>li+li:before {color:#fff; content:"»";}
+#s-lib-admin-bc .breadcrumb>.active, #s-lib-bc .breadcrumb>.active {color:#fff;}
+#s-lib-bc-list a {color:#fff; text-decoration:none;}
+#s-lib-bc-list a:hover, .s-lib-bc-list a:focus {
+	border-bottom: solid 4px #e74c3c;
+    padding: 10px 0;
+}
+#s-lib-public-header {
+`	height: 44px;
+    width: 100%;
+	padding-bottom:0px;
+}
+#s-lib-bc {
+	width: 100%;
+	background: #726158;
+	
+}
+ol#s-lib-bc-list li{
+    display: inline-block;
+    height: 100%;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+	padding: 10px 0;
+}
+#s-lg-guide-header {
+	width:100%
+	
+}
+
+
+#s-lib-bc .breadcrumb {
+    list-style: none;
+    margin: auto;
+    height: 44px;
+    padding: 0 12px;
+	max-width: 1230px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+#s-lg-guide-header {
+	margin-bottom:10px;
+	
+}
+
+
+ #s-lg-guide-header-info, .pull-right, #s-lib-public-header-title, #s-lib-public-header-desc {
+	margin: auto;
+	padding: 0 12px;
+	max-width: 1230px;
+    padding-left: 12px;
+    padding-right: 12px;
+ }
+
+#s-lg-guide-header .pull-right {
+	float:none!important;
+	margin-top:10px;
+	
+} 
+#s-lg-tabs-container .nav-pills {
+	font-size:14px;
+	font-weight:600;
+	
+}
+
+
+#s-lg-tabs-container .nav-pills > li > a, #s-lg-tabs-container .nav-pills > li > a.s-lg-tab-top-link {
+	font-weight:600;
+}
+
+#s-lg-tabs-container .nav-pills > .active > a  {
+	 border-left: 3px solid #e74c3c;
+	
+}
+
+
+@media (min-width: 1200px) {
+#s-lg-side-nav-content, #s-lib-footer-public, #s-lib-public-main {
+    width: auto;
+	margin: auto;
+	padding: 0 12px;
+	max-width: 1230px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+}
+@media (max-width: 400px)
+{
+	#s-lib-bc {
+		display:none;
+		
+	}
+}
+/*Removed features - remove code if these features are to be used*/
+
+#s-lg-index-guidetype-btn {display:none;}/*Button to sort guides by type - remove this code if useful types are added*/
+#col-subjects, #col-types, #col-vendors {display:none;}/*A-Z List drop-down menus for subjects, database types, and vendors - remove this code if metadata is added*/

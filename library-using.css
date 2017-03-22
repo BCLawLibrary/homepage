@@ -1,0 +1,142 @@
+#hours table {
+	font-size:14px;
+	
+}
+
+#hours .nav-tabs {
+	display:none;
+}
+
+.nav-pills {
+	
+	border-bottom: 2px solid #8a100b;
+	background:#eee;
+	padding-top: 15px;
+}
+
+.nav-pills:before {
+	content:"Law Library Hours";
+	font-size: 24px;
+    color: #555;
+	margin: 0px 30px 5px 20px;
+	float:left;
+	
+	
+}
+
+.nav-pills > li + li {
+    margin-left: 10px;
+}
+
+.nav-pills li a {
+    background: #BC9B6B;
+	display: inline-block;
+    font-weight: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer; 
+    user-select: none;
+	font-size: 14px;
+    line-height: 13px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 0;
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    padding: 12px 20px;
+}
+
+.nav-pills li.active a  {
+
+	background:#8a100b;
+
+}
+.nav-pills li.active a:focus {
+	background:#8a100b!important;
+}
+
+.nav-pills li.active a:hover {
+	color:#8a100b;
+	background:#8a100b;
+	
+}
+.nav-pills li a:hover {
+	color:#BC9B6B;
+	background:#BC9B6B;
+}
+.nav-pills li a:focus {
+	background:#BC9B6B!important;
+}
+
+#hours .btn.btn-default {
+	font-size:30px;
+	color:#555;
+	background-color:#
+}
+.s-lc-mhw-header {
+	text-align:center;
+}
+
+.s-lc-mhw-header-date {
+	font-size:30px;
+}
+
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+	border-bottom: 2px solid #DCCAA0;
+}
+
+.s-lc-mhw-days {
+	font-weight:bold;
+}
+
+.s-lc-whw-cont .table thead tr th {
+	border-bottom:0px solid #fff;
+}
+
+tbody tr.s-lc-whw-loc-tr-5008 td {
+	border-top:1px solid #0873AE;
+}
+
+tbody tr.s-lc-whw-loc-tr-5008:nth-child(2) td {
+	border-top:1px solid #C23148;
+}
+tbody tr.s-lc-whw-loc-tr-5008:nth-child(3) td {
+	border-top:1px solid #DE9600;
+}
+
+
+
+.s-lc-mhw-loc-name {
+	font-weight:bold;
+	border-top:1px solid #0873AE;
+}
+
+.loc_5012 .s-lc-mhw-loc-name {
+	border-top:1px solid #C23148;
+}
+.loc_5014 .s-lc-mhw-loc-name {
+	border-top:1px solid #DE9600;
+}
+
+
+#s-lg-widget-1477067040964 ul {
+	padding-left:0px;
+	font-size: 18px;
+	
+}
+#s-lg-widget-1477067040964 li:before {
+    content: "\e62e";
+	color: #947f4e;
+	font-family: 'icomoon';
+    padding-right: 8px;
+}
+
