@@ -1,3 +1,3 @@
 # BC Law Library Homepage
 
-Simple customization files from the Law Library's homepage.
+Customization files from the Law Library's homepage, LibGuides page, and LibCal page.
