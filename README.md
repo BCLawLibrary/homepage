@@ -2,4 +2,4 @@
 
 Customization files from the Law Library's homepage, LibGuides page, and LibCal page.
 
-Requires JQuery.
+bclg.js requires JQuery.
