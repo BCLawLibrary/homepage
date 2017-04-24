@@ -104,9 +104,9 @@ body .hours p {
 }
 
 .s-lg-btn-api-drop.btn.btn-default {
-	background-color:#947F4E;
-	color:#ffffff !important;
-	border:0px solid;
+	background: #dccaa0;
+    color: #000;
+    border: 0;
 	font-family:"Open Sans", Helvetica, Arial, sans-serif !important;
 	padding:9px 20px;
 	padding-left: 20px !important;
@@ -118,9 +118,9 @@ body .hours p {
 	
 }
 .s-lg-btn-api-drop.btn.btn-default:hover {
-	background: #b29d6c;
-    border: none;
-    color: #000000;
+    color: #fff!important;
+    background: #a78e56;
+    border: 0;
 	
 }
 
