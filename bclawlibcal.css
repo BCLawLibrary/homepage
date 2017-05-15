@@ -2,6 +2,13 @@
 /* CSS Document */
 body {color: #555; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size:16px; }
 
+
+#s-lc-public-skiplink {
+	position:absolute;
+	left:-500px;
+}
+
+
 .s-lib-cmd-bar, .ui-dialog {
 	font-size:12px;
 	

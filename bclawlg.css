@@ -1,6 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
-body {color: #555; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size:16px;}
+body {
+	color: #555; 
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif; 
+	font-size:16px; 
+	padding-left:0px;
+	padding-right:0px;
+
+}
+
+.s-lib-main, #s-lg-side-nav-content {
+	padding-left:15px;
+	padding-right:15px;
+}
 
 #s-lg-public-skiplink {
 	position:absolute;
