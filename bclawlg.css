@@ -1,9 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	color: #555; 
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif; 
-	font-size:16px; 
+	color: #555;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size:16px;
 	padding-left:0px;
 	padding-right:0px;
 
@@ -21,7 +21,7 @@ body {
 
 .s-lib-cmd-bar, .ui-dialog {
 	font-size:12px;
-	
+
 }
 
 
@@ -43,7 +43,7 @@ body {
 
 .ui-widget-content a, a {color:#8A100B}
 .ui-widget-content a:hover, .ui-widget-content a:focus, a:hover, a:focus {color: #8A100B;}
-h1#s-lg-guide-name, h1#s-lib-public-header-title {    
+h1#s-lg-guide-name, h1#s-lib-public-header-title {
 	font-family: 'OpenSans-Light',Helvetica,Arial,sans-serif;
     font-size: 40px;
     font-weight: lighter;
@@ -51,7 +51,7 @@ h1#s-lg-guide-name, h1#s-lib-public-header-title {
 	margin-bottom:20px;
 	line-height:46px;
 	margin-top:20px;
-	
+
 	}
 .s-lib-box {box-shadow: 0 8px 6px -6px #DFDDCF;}
 .s-lib-box-title {font-family: 'Open Sans', Helvetica, Arial, sans-serif;}
@@ -77,13 +77,13 @@ h1#s-lg-guide-name, h1#s-lib-public-header-title {
 
 .nav .s-lg-index-nav-btn>button {
 	color:#726158;
-	
+
 }
 
 .nav-pills>li.active>button, .nav-pills>li.active>button:focus, .nav-pills>li.active>button:hover {
 	background-color: #726158;
 	color: #DFDDCF;
-	
+
 }
 
 
@@ -104,7 +104,7 @@ h1#s-lg-guide-name, h1#s-lib-public-header-title {
 #s-lib-bc {
 	width: 100%;
 	background: #726158;
-	
+
 }
 ol#s-lib-bc-list li{
     display: inline-block;
@@ -117,7 +117,7 @@ ol#s-lib-bc-list li{
 }
 #s-lg-guide-header {
 	width:100%
-	
+
 }
 
 
@@ -131,9 +131,21 @@ ol#s-lib-bc-list li{
     padding-right: 12px;
 
 }
+
+#form-group-s-lg-guide-order .form-group {
+	display:inline-block;
+}
+
+#form-group-s-lg-guide-order .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+
 #s-lg-guide-header {
 	margin-bottom:10px;
-	
+
 }
 
 
@@ -148,12 +160,12 @@ ol#s-lib-bc-list li{
 #s-lg-guide-header .pull-right {
 	float:none!important;
 	margin-top:10px;
-	
-} 
+
+}
 #s-lg-tabs-container .nav-pills {
 	font-size:14px;
 	font-weight:600;
-	
+
 }
 
 
@@ -163,7 +175,7 @@ ol#s-lib-bc-list li{
 
 #s-lg-tabs-container .nav-pills > .active > a  {
 	 border-left: 3px solid #e74c3c;
-	
+
 }
 
 
@@ -179,11 +191,17 @@ ol#s-lib-bc-list li{
 
 
 }
-@media (max-width: 400px)
+@media (max-width: 500px)
 {
-	#s-lib-bc {
+	/*#s-lib-bc {
 		display:none;
-		
+	}*/
+	.navbar-header{
+		display:none;
+	}
+	.nav .s-lg-index-nav-btn>button  {
+		font-size: 12px;
+		margin: 0px;
 	}
 }
 /*Removed features - remove code if these features are to be used*/

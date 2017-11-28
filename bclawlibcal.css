@@ -11,7 +11,7 @@ body {color: #555; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-
 
 .s-lib-cmd-bar, .ui-dialog {
 	font-size:12px;
-	
+
 }
 
 
@@ -27,7 +27,7 @@ h2 {
 
 .ui-widget-content a, a {color:#8A100B}
 .ui-widget-content a:hover, .ui-widget-content a:focus, a:hover, a:focus {color: #8A100B;}
-h1 {    
+h1 {
 	font-family: 'OpenSans-Light',Helvetica,Arial,sans-serif;
     font-size: 40px;
     font-weight: lighter;
@@ -35,15 +35,22 @@ h1 {
 	margin-bottom:20px;
 	line-height:46px;
 	margin-top:20px;
-	
+
 	}
+#s-lc-eq-navform {
+	display: none;
+}
+
+
 
 #s-lc-public-bc {
 	width:100%;
 	margin:0px;
+	height: 44px;
+	overflow-y: hidden;
 }
-	
-	
+
+
 #s-lc-public-bc .breadcrumb>li+li:before {color:#fff; content:"»";}
 #s-lc-public-bc .breadcrumb>.active {color:#fff;}
 #s-lc-public-bc .breadcrumb a {color:#fff; text-decoration:none;}
@@ -64,7 +71,7 @@ h1 {
 	width: 100%;
 	background: #726158;
 	border-radius:0px;
-	
+
 }
 #s-lc-public-bc .breadcrumb li{
     display: inline-block;
@@ -77,7 +84,7 @@ h1 {
 }
 #s-lc-public-bc .breadcrumb {
 	width:100%
-	
+
 }
 
 
@@ -99,6 +106,10 @@ h1 {
     right: 0px;
     display: block;
 }
+#time_grid_cont {
+	font-size:12px;
+}
+
 .ui-datepicker {
 	font-size: 12px;
 }
@@ -111,6 +122,28 @@ h1 {
 #s-lc-rm-tg-roomleg {
     margin: 20px;
 }
+#equip_ #jquery-notification {
+	display:none!important;
+	font-size:12px;
+}
+#equip_ #jquery-notification.jquery-notification-error {
+	display:block!important;
+}
+#equip_ #jquery-notification-message {
+	display:none;
+}
+#equip_ #jquery-notification::after {
+	content:"Only one block of time per booking is permitted"
+}
+
+
+
+
+
+
+
+
+
 @media (min-width: 1200px) {
 .container {
     width: auto;
@@ -123,10 +156,14 @@ h1 {
 
 
 }
-@media (max-width: 500px)
+@media (max-width: 400px)
 {
-	#s-lc-public-bc {
+	.navbar-header{
 		display:none;
-		
+	}
+
+	#time_grid_cont {
+		margin-top:0px!important;
+		padding-top:0px!important;
 	}
 }
