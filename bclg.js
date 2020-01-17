@@ -1,11 +1,8 @@
 $(document).ready(function($) {
-	var chatCode='<iframe src="//www.bc.edu/content/dam/bc1/schools/law/js/library/chatCode.html" seamless frameborder=0 height=220></iframe>';
-	$(".margin-bottom-xlg")
+	var chatCode='<div id="libchat_fe40219deb0b08ee428db6be50489036"></div><script type="text/javascript" src="https://v2.libanswers.com/load_chat.php?hash=fe40219deb0b08ee428db6be50489036"></script>';
+	$(".marging-bottom-xlg")
         .find(".pad-bottom-sm:contains('Help is Just a Click Away')")
     	.parent()
     	.parent()
         .html(chatCode);
 });
-
-
-    

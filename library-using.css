@@ -6,6 +6,11 @@
 #hours .nav-tabs {
 	display:none;
 }
+#pagecontent #hours .btn.btn-default, #pagecontent #hours .btn {
+	width:auto;
+	padding-bottom: 12px;
+}
+
 
 .nav-pills {
 	

@@ -5,7 +5,16 @@
     background-color: #487583;
     color: #fff;
 	overflow: hidden;
-	
+
+}
+.chat-hours .gold {
+	color: #dccaa0;
+	border-bottom: 1px dotted #7AA7B5;
+}
+.chat-hours .gold:hover {
+	color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
 }
 
 .hours {
@@ -13,41 +22,46 @@
 	padding: 60px 20px;
 }
 
-#libchat_btn_widget {
+#libchat_btn_widget, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 {
 	float:left;
 	padding: 34px 15px 35px;
-	
+
 }
-#libchat_btn_widget img {
+#libchat_btn_widget img, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 img {
     height: 130px;
-	
+
 }
 
-	
+
 table th.hours-col-loc {
 	display:none;
 }
 
+table tr.hours-depart {
+	display:none;
+}
+
+
 .hours-row:nth-child(n+2) {
 	display:none;
-	
+
 }
 
 
 
 body .hours p {
 	margin-bottom:0px
-	
+
 }
 
 .input-group-btn{
 	display:inline;
-	
+
 }
 
 .accessibility-text {
 	display:none;
-	
+
 }
 
 .library-search {
@@ -58,8 +72,12 @@ body .hours p {
 
 .library-search button {
 	margin-top:4px;
+
 }
 
+#pagecontent .library-search .btn.btn-default, #pagecontent .library-search .btn {
+	width:auto;
+}
 
 .library-search input {
 	width:75%;
@@ -72,17 +90,17 @@ body .hours p {
     vertical-align: top;
 	bottom: -4px;
 	color: #222;
-	
+
 }
 
 .library-search .twitter-typeahead input {
 	width:100%;
-	
+
 }
 
 .search-form {
 	width:100%;
-	
+
 }
 .library-search form {
 	display:inline;
@@ -95,7 +113,7 @@ body .hours p {
 	vertical-align:bottom;
 	padding-bottom: 6px;
 	margin-top: 5px;
-	
+
 }
 
 .advanced-wrapper a {
@@ -103,7 +121,7 @@ body .hours p {
 }
 
 .search-all .advanced-wrapper {
-	
+
 }
 
 
@@ -122,7 +140,7 @@ body .hours p {
 	padding:1px 0px 1px 5px !important;
 	-webkit-appearance: none  !important;
    -moz-appearance: none  !important;
-   appearance: none  !important;  
+   appearance: none  !important;
    -webkit-border-radius: 0px  !important;
 	-moz-border-radius: 0px  !important;
 	border-radius: 0px  !important;
@@ -145,37 +163,40 @@ body .hours p {
 	margin-left:-1px!important;
 	margin-top:4px !important;
 	line-height:18px !important;
-	
+
 }
 .s-lg-btn-api-drop.btn.btn-default:hover {
     color: #fff!important;
     background: #a78e56;
     border: 0;
-	
+
 }
 
 .library-search {
 	margin-bottom:1px;
 }
 .library-search.search-all {
-   
+
 }
 
 .tabs-section-new.folder-neutral {
 	padding-bottom:0px;
-	
+
+}
+.social-icons {
+	text-align:center;
 }
 
+.social-icons .social {
 
-		.social {
-		text-align:center;
-		
-	}
+    margin-left: auto;
+    margin-right: auto;
+}
 
 	.social ul {
 		list-style:none;
 		padding:10px;
-			
+
 	}
 
 	.social li, .social li:hover {
@@ -184,24 +205,24 @@ body .hours p {
 		padding: 20px;
 		text-decoration:none;
 
-		
+
 	}
 
-	
+
 	.social li a {
 		color: #dccAA0;
 		text-decoration:none;
-		
+
 	}
-	
+
 	.social li a:hover {
 		text-decoration:none;
 		color: #fff;
-		
+
 	}
 
 .bc-image img {
-	
+
 	width:100%
 }
 
@@ -249,14 +270,14 @@ body .hours p {
 	.hours {
 		padding: 60px 10px;
 	}
-	#libchat_btn_widget img{
+	#libchat_btn_widget img, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 img{
 	    height:100px;
 	}
-	
-	#libchat_btn_widget {
+
+	#libchat_btn_widget, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 {
 	padding: 50px 20px;
     float: right;
-	
+
 	}
 
 }
@@ -265,10 +286,10 @@ body .hours p {
 	.hours {
 		  padding: 11px 35px 11px 20px;
 	}
-	#libchat_btn_widget img{
+	#libchat_btn_widget img, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 img{
 	    height:115px;
 	}
-	#libchat_btn_widget {
+	#libchat_btn_widget, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 {
 	padding: 0px 10px 7px;
 	margin-top: -22px;
 	float:right;
@@ -279,10 +300,10 @@ body .hours p {
 	.hours {
 		  padding: 16px 10px;
 	}
-	#libchat_btn_widget img{
+	#libchat_btn_widget img, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 img{
 	    height:105px;
 	}
-	#libchat_btn_widget {
+	#libchat_btn_widget, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 {
 	padding: 0px 20px 7px 5px;
 	margin-top: -22px;
 	float:right;
@@ -299,27 +320,27 @@ body .hours p {
 
 
 @media (max-width: 1020px) {
-	
+
 	.twitter-typeahead {
 
 	}
 	.search-all .advanced-wrapper {
-		
-		
+
+
 	}
-	
-	#libchat_btn_widget{
+
+	#libchat_btn_widget, #libchat_89869b0c11c3b20ddcf044f4db5e59e2{
 	    margin-left: 135px;
 	}
 	.col-md-3, .col-md-9 {
 		width:100%;
 		margin-bottom: 20px;
 	}
-	#libchat_btn_widget {
+	#libchat_btn_widget, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 {
 	    float: right;
 
 	}
-	
+
 	.chat-hours {
 		padding-left: 80px;
 		padding-right: 80px;
@@ -328,26 +349,26 @@ body .hours p {
 		margin-left:0px;
 		padding: 60px 0px;
 	}
-	
+
 }
 
 @media (max-width: 1020px) and (min-width: 992px) {
 		.twitter-typeahead {
-		
+
 	}
 	.search-all .advanced-wrapper {
-		
-		
+
+
 	}
-	
+
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px), screen and (max-width: 767px) {
 	#s-lg-embedded-search-widget-1440420573742 .s-lg-form-control, .s-lg-btn-api-drop.btn.btn-default  {
 		font-size: 14px!important;
 	}
-	
-	
+
+
 }
 
 
@@ -356,74 +377,74 @@ body .hours p {
 @media (max-width: 767px) {
 	.library-search {
 		margin-left: -10px;
-		
+
 	}
-	
+
 	.chat-hours {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	
-	
-	
-	
-	#libchat_btn_widget {
+
+
+
+
+	#libchat_btn_widget, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 {
 		margin-left:0px;
 		margin-right:10%;
 	}
-	
+
 	.featured-section .responsive-columns.section .row > div.col-md-6  { /*eliminate excess space in Databases and Quicklinks lists */
 		margin-bottom:0px;
 	}
-	
+
 	.featured-section ul {
 		margin-bottom:0px;
-		list-style: none;		
+		list-style: none;
 	}
-	
-	
+
+
 }
 
 
 
 @media (max-width: 465px) {
-	
+
 	.twitter-typeahead {
 
 	}
-	
+
 	.twitter-typeahead, .library-search input, #s-lg-embedded-search-widget-1440420573742 .s-lg-form-control  {
 	width: 100% !important;
 	bottom: 0px;
 	}
-	
+
 	.search-all .advanced-wrapper {
-		
-		
+
+
 	}
-	#libchat_btn_widget {
+	#libchat_btn_widget, #libchat_89869b0c11c3b20ddcf044f4db5e59e2 {
 		margin-right:0px;
 	}
-	
-	
-	
+
+
+
 }
 @media (max-width: 360px) {
 	.chat-hours {
 		text-align:center
 	}
-	#libchat_btn_widget, .hours {
+	#libchat_btn_widget, #libchat_89869b0c11c3b20ddcf044f4db5e59e2, .hours {
 		margin:auto;
 		width:100%
 	}
 	.hours-today {
 		text-align: center;
-		width: 100%;	
+		width: 100%;
 	}
-	
-	
-	
-} 
+
+
+
+}
 
 
 
@@ -481,4 +502,3 @@ input#typeahead {
 }
 */
 /* End typeahead */
-
