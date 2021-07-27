@@ -9,7 +9,6 @@ body {
 }
 .centers {
 	
-	padding-bottom:10px;
 }
 
 
@@ -87,6 +86,10 @@ header a {
     display: block;
 }
 
+.centers header .nav-wrap {
+    background-color: #07625d;
+}
+
 header .nav-wrap #mainNav>ul>li {
     margin-left: 10px;
     position: static;
@@ -96,7 +99,7 @@ header .nav-wrap #mainNav>ul>li {
 
 
 .centers header .nav-wrap #mainNav>ul>li>a {
-    color: #555;
+    color: #fff;
     text-shadow: none;
 }
 
@@ -108,23 +111,24 @@ header .nav-wrap #mainNav > ul {
 header .nav-wrap #mainNav>ul>li a {
     padding: 6px 10px;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     text-shadow: 0 2px 6px rgba(0,0,0,0.85);
     font-weight: 400;
     transition: .2s;
     -moz-transition: .2s;
     -webkit-transition: .2s;
+    text-transform: uppercase;
 }
 header .nav-wrap #mainNav>ul>li a:hover {
-	color:#fff;
-	background-color:#534741;
+	background-color:#fff;
+	color:#534741;
 	
 }
 
 
 .centers header .nav-wrap .centerlogo {
-    padding-top: 10px!important;
+    padding-top: 20px!important;
     font-family: "utopia-std",sans-serif;
 }
 
@@ -134,11 +138,11 @@ header .nav-wrap #mainNav>ul>li a:hover {
 }
 
 .centers header .nav-wrap .centerlogo a {
-    color: #362f2d;
+    color: white;
 }
 .centers header .nav-wrap .centerlogo a:hover {
 	text-decoration:none;
-	color:#8A100B;
+	color:white;
 	
 }
 .centers header .top-bar .nav.utility {
@@ -147,7 +151,7 @@ header .nav-wrap #mainNav>ul>li a:hover {
 }
 
 header .nav-wrap #mainNav {
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px){
