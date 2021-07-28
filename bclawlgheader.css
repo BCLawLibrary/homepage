@@ -86,7 +86,7 @@ header a {
     display: block;
 }
 
-.centers header .nav-wrap {
+.centers header .nav-wrap.green {
     background-color: #07625d;
 }
 
@@ -99,18 +99,18 @@ header .nav-wrap #mainNav>ul>li {
 
 
 .centers header .nav-wrap #mainNav>ul>li>a {
-    color: #fff;
+    color: rgb(113, 99, 88);
     text-shadow: none;
 }
 
 header .nav-wrap #mainNav > ul {
-    margin-right: -15px !important;
+    /* margin-right: -15px !important; */
     position: relative;
 }
 
 header .nav-wrap #mainNav>ul>li a {
-    padding: 6px 10px;
-    color: #fff;
+    padding: 15px 10px;
+    color: rgb(113, 99, 88);
     font-size: 16px;
     line-height: 20px;
     text-shadow: 0 2px 6px rgba(0,0,0,0.85);
@@ -121,8 +121,8 @@ header .nav-wrap #mainNav>ul>li a {
     text-transform: uppercase;
 }
 header .nav-wrap #mainNav>ul>li a:hover {
-	background-color:#fff;
-	color:#534741;
+	color:#fff;
+	background-color:#534741;
 	
 }
 
@@ -134,7 +134,7 @@ header .nav-wrap #mainNav>ul>li a:hover {
 
 .centers header .nav-wrap .centerlogo a .centerhome {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 36px;
 }
 
 .centers header .nav-wrap .centerlogo a {
@@ -151,7 +151,8 @@ header .nav-wrap #mainNav>ul>li a:hover {
 }
 
 header .nav-wrap #mainNav {
-    padding-top: 30px;
+    /* padding-top: 30px; */
+    margin-left: -20px;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px){
