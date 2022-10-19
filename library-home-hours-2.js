@@ -18,7 +18,7 @@ const callback = function(mutationsList, observer) {
             $('tr.loc5008').append('<td class="link"><a href="library/using/hours.html"><span class="link-text">Detailed Hours</span></a></td>');
             $('tr.dep14722').append('<td class="link"><a href="mailto:atrinbox@bc.edu"><span class="link-text">Email ATR</span></a></td><td class="link"></td>'); //email ATR and appointment calendar
             //$('tr.dep14722').append('<td class="link"><a href="mailto:atrinbox@bc.edu"><span class="link-text">Email ATR</span></a></td>'); //just email, no appointment calendar
-            $('tr.dep5014').append('<td class="link"><div id="libchat_89869b0c11c3b20ddcf044f4db5e59e2"></div><a href="https://lawguides.bc.edu/educationandreference"><span class="link-text">Get Research Help</span></a></td>')
+            $('tr.dep5014').append('<td class="link"><div id="libchat_89869b0c11c3b20ddcf044f4db5e59e2"></div><a href="https://lawguides.bc.edu/educationandreference"><span class="link-text">Get Research Help</span></a><a href="https://lawlibstudyrooms.bc.edu/calendar/EandRtraining?cid=14793&t=d&d=0000-00-00&cal=14793&inc=0"><span class="link-text">Research Trainings</span></a></td>')
             //Only run the function once and disconnect the observer once it has run
             observer.disconnect();
         }
