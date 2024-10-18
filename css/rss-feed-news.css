@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    
+}
+
+#newsbackground {
+    background-color: #F0F0F0;
+}
+
+#blogger {
+    display: grid;
+    grid-template-areas: "post post post post";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 3fr;
+    column-gap: 30px;
+}
+
+#blogger-item-wrapper {
+    grid-area: post;
+}
+
+.blogger-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    height: 100%;
+}
+
+.blogger-item img {
+    display: block;
+    width: 100%;
+}
+
+.blogger-text {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.blogger-image {
+    height: fit-content;
+}
+
+.postTitle.postTitle { /* Override BC Styling with double selector */
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 0.5rem 0;
+}
+
+.postTitle a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.postDate.postDate {
+    margin: 0;
+    font-size: 1.4rem;
+    color: black;
+}
+
+@media screen and (max-width: 992px){
+
+    #newsheading {
+        padding: 20px 0;
+    }
+    #blogger {
+        padding: 0;
+        display: grid;
+        grid-template-areas: 
+            "post post" 
+            "post post";
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #blogger {
+        display: grid;
+        grid-template-areas: 
+            "post" 
+            "post"
+            "post"
+            "post";
+        grid-template-columns: 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+}

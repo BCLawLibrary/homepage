@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.bc.edu/content/dam/bc1/schools/law/js/library/facebook/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://www.bc.edu/content/dam/bc1/schools/law/js/library/facebook/imagesloaded.pkgd.min.js"></script>
+    <script src="rss-feed-news.js"></script>
+    <script src="new-books-covers-gsapi4.js"></script>
+    <script src="tabbed-content.js"></script>
+    <link rel="stylesheet" href="library-home.css">
+    <link rel="stylesheet" href="rss-feed-news.css">
+    <link rel="stylesheet" href="new-book-covers.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="tabbed-content.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Update</title>
+</head>
+<body>
+    <!--Law Library News section-->
+    <div id="newsbackground">
+        <h2 id="newsheading">Law Library News</h2>
+        <div class="grid" id="blogger"></div>
+    </div>
+    <!--New Additions section-->
+    <div id="new-books-wrapper">
+        <h2 id="booksheading">New Additions</h2>
+        <div id="new-books">
+            <a href="https://bclib.bc.edu/libsearch/bc/id/99138367190201021" class="new-book-cover">
+                <img src="https://m.media-amazon.com/images/I/81Iou0xIRXL._AC_UF1000,1000_QL80_.jpg" alt="Tribal sovereignty in Alaska : how it happened, what it means">
+            </a>
+            <a href="https://bclib.bc.edu/libsearch/bc/id/99138367191001021" class="new-book-cover">
+                <img src="https://rutgers-us.imgix.net/covers/9781978813564.jpg?auto=format&h=648" alt="On transits and transitions : trans migrants and U.S. immigration law">
+            </a>
+            <a href="https://bclib.bc.edu/libsearch/bc/id/99138389091101021" class="new-book-cover">
+                <img src="https://m.media-amazon.com/images/I/61++SCEfcAL._AC_UF1000,1000_QL80_.jpg" alt="Standing Bear's quest for freedom : the first civil rights victory for Native Americans">
+            </a>
+            <a href="https://bclib.bc.edu/libsearch/bc/id/99138367191501021" class="new-book-cover">
+                <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_568,c_scale/jackets/9781788314398.jpg" alt="The last witches of England : a tragedy of sorcery and superstition">
+            </a>
+            <a href="https://bclib.bc.edu/libsearch/bc/id/99138367192001021" class="new-book-cover">
+                <img src="https://m.media-amazon.com/images/I/41PBOEN3XHL.jpg" alt="The Gotti wars : taking down America's most notorious mobster">
+            </a>
+            <a href="https://bclib.bc.edu/libsearch/bc/id/99138389094101021" class="new-book-cover">
+                <img src="https://uncpress-us.imgix.net/covers/9781469671314.jpg?auto=format&h=648" alt="Free Joan Little : the politics of race, sexual violence, and imprisonment">
+            </a>
+        </div>
+        <a class="readMoreWrapper" href="https://www.bc.edu/content/bc-web/schools/law/sites/students/library/using/new-books.html">
+            <div class='readMore'>
+                View all by subject
+            </div>
+            <div class='readMoreTriangle'></div>
+        </a>
+    </div>
+
+    <!--Tabbed Content & Sidebar-->
+    <div id="tabbed-content-sidebar-container">
+
+        <!--Tabbed Content-->
+        <div id="tabbed-content-wrapper">
+            <div class="tabbed-search-container">
+                <ul class="navigation-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a class="nav-tab" href="#tab-all" aria-controls="tab-0" role="tab" data-toggle="tab" aria-expanded="true">All</a>
+                    </li>
+            
+                    <li role="presentation" class="">
+                        <a class="nav-tab" href="#tab-books" aria-controls="tab-1" role="tab" data-toggle="tab" aria-expanded="true">Books</a>
+                    </li>
+            
+                    <li role="presentation" class="">
+                        <a class="nav-tab" href="#tab-articles" aria-controls="tab-2" role="tab" data-toggle="tab" aria-expanded="true">Articles</a>
+                    </li>
+            
+                    <li role="presentation" class="">
+                        <a class="nav-tab" href="#tab-research_guides" aria-controls="tab-3" role="tab" data-toggle="tab" aria-expanded="true">Research Guides</a>
+                    </li>
+                </ul>
+                <!-- a tab-pane is selected from tabbed-content
+                    and placed into panel_area -->
+                <div id="search-panel-area"></div>
+                <div class="tabbed-content">
+                    <div role="tabpanel" id="tab-all" class="tab-pane active">
+                        <script src="https://library.bc.edu/theme/bcbento/js/typeahead.bundle.min.js" type="text/javascript"></script>
+                        <script src="/content/dam/bc1/schools/law/js/library/bclawlib-typeahead.js" type="text/javascript"></script>
+                        <div class="library-search search-all"> 
+                            <div class="search-form">
+                                <form method="get" action="https://library.bc.edu/search" id="bcbento-search">
+                                    <label for="typeahead" class="accessibility-text">Search articles, books, journals, and more</label>
+                                    <span class="twitter-typeahead" style="position: relative; display: inline-block;">
+                                        <input type="text" id="typeahead" name="any" placeholder="Find articles, books, journals, &amp; more" class="tt-input" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+                                        <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Open Sans&quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre>
+                                        <div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+                                            <div class="tt-dataset tt-dataset-0">
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default btn-gold searchAll s-lg-btn-api-drop" type="submit" value="Search">
+                                            Search
+                                        </button>
+                                    </span>
+                                </form>
+                            </div>
+                            <div class="advanced-wrapper readMoreWrapper">
+                                <a class="advanced readMore" href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?mode=advanced&amp;vid=bclib_new&amp;lang=en_US&amp;sortby=rank&amp;search_scope=onesearch">Advanced Search</a>
+                                <div class="readMoreTriangle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" id="tab-books" class="tab-pane">
+                        <script> 
+                            function resetId(field){
+                                var idInput = document.getElementById(field);
+                                idInput.value = "any,contains,"+idInput.value;
+                                $("#"+field).css({'color':'white'});
+                            }
+                        </script>
+                        <div class="library-search"> 
+                            <div class="search-form">
+                                <form method="get" action="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search" id="bcbento-books" autocomplete="off" onsubmit="resetId('book-search');">
+                                    <label for="book-search" class="accessibility-text">Search books, media, and more</label>
+                                    <input class="staticField" type="hidden" name="tab" value="bcl_only">
+                                    <input class="staticField" type="hidden" name="search_scope" value="bcl">
+                                    <input class="staticField" type="hidden" name="vid" value="bclib_new">
+                                    <input class="staticField" type="hidden" name="lang" value="en_US">
+                                    <input class="staticField" type="hidden" name="offset" value="0">
+                                    <input type="text" id="book-search" class="" name="query" placeholder="Find books, media, &amp; more">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default btn-gold searchBooks s-lg-btn-api-drop" type="submit" value="Search">
+                                        Search
+                                        </button>
+                                    </span>
+                                </form>
+                            </div>
+                            <div class="advanced-wrapper readMoreWrapper">
+                                <a class="advanced readMore" href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?mode=advanced&amp;vid=bclib_new&amp;lang=en_US&amp;sortby=rank&amp;search_scope=bcl">Advanced Search</a>
+                                <div class="readMoreTriangle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" id="tab-articles" class="tab-pane">
+                        <div class="library-search"> 
+                            <div class="search-form">
+                                <form method="get" action="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search" id="bcbento-articles" autocomplete="off" onsubmit="resetId('article-search');">
+                                    <label for="article-search" class="accessibility-text">Search journal articles</label>
+                                    <input class="staticField" type="hidden" name="tab" value="pci_only">
+                                    <input class="staticField" type="hidden" name="search_scope" value="pci">
+                                    <input class="staticField" type="hidden" name="vid" value="bclib_new">
+                                    <input class="staticField" type="hidden" name="lang" value="en_US">
+                                    <input class="staticField" type="hidden" name="offset" value="0">
+                                    <input type="text" id="article-search" name="query" placeholder="Find journal articles">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default btn-gold searchArticles s-lg-btn-api-drop" type="submit" value="Search">
+                                            Search
+                                        </button>
+                                    </span>
+                                </form>
+                            </div>
+                            <div class="advanced-wrapper readMoreWrapper">
+                                <a class="advanced readMore" href="https://bc-primo.hosted.exlibrisgroup.com/primo-explore/search?mode=advanced&amp;vid=bclib_new&amp;lang=en_US&amp;sortby=rank&amp;search_scope=pci">Advanced Search</a>
+                                <div class="readMoreTriangle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" id="tab-research_guides" class="tab-pane">
+                        <div class="library-search"> 
+                            <label for="lg-search-box" class="accessibility-text">Search research guides</label>
+                            Hello
+                            <script>
+                                springshare_widget_config_1440420573742 = {};
+                            </script>
+                            
+                            <div id="s-lg-widget-1440420573742" class="search-form"></div>
+                            
+                            <script>
+                                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://lgapi.libapps.com/widgets.php?site_id=990&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=1&placeholder_text=Find+research+guides&button_text=Search&widget_height=&widget_width=250&config_id=1440420573742";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","s-lg-widget-script-1440420573742");
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function hash_change() {
+
+                        /* FILLING THE PANEL-AREA WITH CONTENT FROM A HIDDEN DIV. FOR SOME REASON, NON-JQUERY INNERHTML DOES NOT ALWAYS YIELD THE EXPECTED RESULTS, SO WE USE JQUERY-INNERHTML, WHICH WORKS WELL
+                        */
+                        document.getElementById('search-panel-area').innerHTML = document.getElementById(location.hash.substring(1,location.hash.length)).innerHTML
+                        // $('#search-panel-area').html(document.getElementById(location.hash.substring(1,location.hash.length)).innerHTML)
+
+                        /* HIGHLIGHTING THE SELECTED 'TAB' */
+                        var x = document.getElementsByClassName("nav-tab");
+                        var i;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].removeAttribute('style');
+                            if(x[i].href.substring(x[i].href.lastIndexOf('#')+1, x[i].href.length) == location.hash.substring(1,location.hash.length)) {
+                                /* REPLACE THIS WITH YOUR OWN CSS */
+                                // x[i].style.color='white';
+                                x[i].style.backgroundColor='rgb(133,16,10)';
+                                x[i].style.color='white';
+                            }
+                        }
+
+                    }
+                    window.onhashchange=hash_change;
+                </script> 
+            </div>
+            <div class="tabbed-links-container">
+                <ul class="navigation-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a class="nav-tab" href="#tab-all" aria-controls="tab-0" role="tab" data-toggle="tab" aria-expanded="true">All</a>
+                    </li>
+            
+                    <li role="presentation" class="">
+                        <a class="nav-tab" href="#tab-books" aria-controls="tab-1" role="tab" data-toggle="tab" aria-expanded="true">Books</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="responsive-columns section">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div>
+                                <div class="bc-padded-section parbase section">  
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div>
+                                                <div class="bc-text parbase section">
+                                                    <div class="text-new content  darkblue-white padding-sm side-small">
+                                                        <h2>Databases</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="responsive-columns section">
+                                                    <div class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                <div>
+                                                                    <div class="bc-text parbase section">
+                                                                        <div class="text-new content   padding-sm none">
+                                                                            <ul>
+                                                                                <li><a href="http://lawguides.bc.edu/az.php">All Law Library Databases</a></li>
+                                                                                <li><a href="https://libguides.bc.edu/az.php">All BC Research Databases</a></li>
+                                                                                <li><a href="http://bc.on.worldcat.org" adhocenable="false">WorldCat</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                <div>
+                                                                    <div class="bc-text parbase section">
+                                                                        <div class="text-new content   padding-sm none">
+                                                                            <ul>
+                                                                                <li><a href="http://www.bloomberglaw.com/">BloombergLaw</a></li>
+                                                                                <li><a href="https://go.openathens.net/redirector/bc.edu?url=http://heinonline.org/HOL/Welcome">HeinOnline</a></li>
+                                                                                <li><a href="http://www.lexisnexis.com/lawschool/login.aspx">LexisNexis</a></li>
+                                                                                <li><a href="https://lawschool.thomsonreuters.com/">Westlaw</a></li>
+                                                                                <li><a href="https://lawguides.bc.edu/studyaids">Study Aids</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div>       
+                                <div class="bc-text parbase section">
+                                    <div class="text-new">
+                                    </div>
+                                </div>
+                                <div class="bc-padded-section parbase section">
+                                    <section class="padded-section-new None padded-lgray-dg">  
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div>                           
+                                                    <div class="bc-text parbase section">
+                                                        <div class="text-new content  burntorange-white padding-sm side-small">
+                                                            <h2>Quick Links</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="responsive-columns section">
+                                                        <div class="clearfix">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                    <div>
+                                                                        <div class="bc-text parbase section">
+                                                                            <div class="text-new content   padding-sm none">
+                                                                                <ul>
+                                                                                    <li><a href="https://lawlibstudyrooms.bc.edu/spaces">Study Room Reservation</a></li>
+                                                                                    <li><a href="https://library.bc.edu/courses/">Course Reserves</a></li>
+                                                                                    <li><a href="/content/bc-web/schools/law/sites/students/library/using/preparing-exams.html#past-exams">Past&nbsp;Exams</a></li>
+                                                                                    <li><a href="https://lawguides.bc.edu/">Research Guides</a></li>
+                                                                                    <li><a href="https://lawguides.bc.edu/firstyearguide">Student Survival Kit</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                    <div>                                               
+                                                                        <div class="bc-text parbase section">
+                                                                            <div class="text-new content   padding-sm none">        
+                                                                                <ul>
+                                                                                        <li><a href="http://www.bc.edu/lms">Course Web Sites</a></li>
+                                                                                        <li><a href="https://lira.bc.edu">LIRA Institutional Repository</a></li>
+                                                                                        <li><a href="/content/bc-web/schools/law/sites/students/library/special-collections/rare-book-room.html">Rare Book Room</a></li>
+                                                                                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdHk4GkKTMD4yF5YcbIXCSLie1DJViEOcR7WF9LofhxUEGj-Q/viewform">Noise Complaint Form</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>                                                  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Sidebar-->
+        <div class="chat-hours" id="all-hours">
+            <div class="hours">
+            
+            <div id="api_hours_today_iid196_lid5008"></div><script src="https://api3.libcal.com/api_hours_today.php?iid=196&lid=5008&format=js&context=object"> </script>
+            </div>
+            
+            <script src="library-homepage-chat-widget.js?hash=89869b0c11c3b20ddcf044f4db5e59e2"></script>
+            
+            <script src="library-home-hours-2.js"></script>
+
+        </div>
+    </div>
+
+    <script>
+        /* Load the first 'panel' at page entrance */
+        if(window.location.hash==''){window.location.replace('#tab-all');}
+        
+        hash_change() 
+    </script> 
+</body>
+</html>
+

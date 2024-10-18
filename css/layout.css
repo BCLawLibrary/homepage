@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+    .col-sm-8 {
+        width: 100% !important;
+    }
+}
+
+.breadcrumb-wrap .container-fluid {
+    display: none;
+}

@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    overflow-anchor: none; /* prevent auto-scroll to tabbed content */
+}
+
+a:focus{
+    outline: none;
+}
+
+
+.bc-tabbed-content {
+    margin:0 100px
+}
+
+bc-tabbed-content.parbase.section {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============ Tabs ============ */
+
+.tabs-section-new.folder-default ul.nav-tabs {
+    margin: 0 0 0 50px;
+}
+
+section.tabs-section-new.folder-default {
+    padding: 0 !important;
+}
+
+.tabs-section-new.folder-default ul.nav-tabs > li {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    border: none !important;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.tabs-section-new.folder-default ul.nav-tabs > li.active a {
+    color: white !important;
+    background-color: #85100A !important;
+}
+
+li[role=presentation] a {
+    background-color: #F0F0F0;
+    color: black !important;
+    text-align: center;
+    line-height: 35px;
+    padding: 2px 35px !important; /* need to override BC styling */
+    margin-top: 0 !important;
+}
+
+
+a[role=tab] {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    min-width: 100px;
+}
+
+
+/* ========== Tab Contents ========= */
+
+.tab-content {
+    background-color: #85100A !important;
+    padding: 40px 0;
+    border: 0 !important;
+}
+
+.accessibility-text {
+    display: none;
+}
+
+.advanced-wrapper {
+    color: #DCCAA0;
+}
+
+.advanced, .whatAmISearching {
+    font-size: 12px;
+    color: inherit;
+}
+
+.advanced:hover, .whatAmISearching:hover, .advanced:active, .whatAmISearching:active {
+    color: inherit;
+}
+
+
+/* ================ Search Form ================ */
+
+.library-search {
+    margin: 0 40px;
+}
+
+.library-search form {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    flex-direction: row-reverse; /* place search button on right */
+}
+
+.library-search .search-form div {
+    width: 100%;
+}
+
+.twitter-typeahead { /* 'All' search span tag needs this */
+    width: 100%;
+}
+
+.library-search input:focus{ /* Keep left border when focused */
+    border-color: #726157 !important;
+}
+
+/*  Springshare search form generates its own CSS and
+    must be overriden with double ID selector */
+.library-search input, #s-lg-guide-search-1692023711288#s-lg-guide-search-1692023711288 {
+    outline: none; 
+    border: none;
+    border-color: #726157;
+    height: 50px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    border-left-style: solid;
+    border-left-width: 5px;
+    width: 100%;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 16px;
+    box-shadow: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 50px;
+}
+
+.search-form, .s-lg-widget-search /* <= Springshare class */{
+    margin-bottom: 15px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #726157 !important;
+    opacity: 1; /* Firefox */
+}
+
+/* =========== Search Button ============ */
+
+/*  Springshare's Search Box comes with its own
+    set of classes/IDs and CSS. It's not possible
+    to add our own classes without a FOUC.
+    So we have to use two selectors to make sure
+    Springshare's Search Box is styled consistent
+    with the other buttons.
+*/
+
+.library-search .search-button, #pagecontent .s-lg-btn-api-drop /* <= Springshare class */ { 
+    position: absolute;
+    height: 50px;
+    width: 50px !important;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    padding: 1px 4px;
+}
+
+#pagecontent .s-lg-btn-api-drop:hover {
+    border: none !important;
+    color: rgb(85, 85, 85) !important;
+    background-color: white;
+} 
+
+
+.hours-quick-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+
+.small-heading-section {
+    padding: 0 50px;
+}
+
+.small-heading {
+    font-size: 2.5rem;
+    
+}
+
+.text-new.content.padding-sm.none {
+    padding: 0;
+}
+
+
+#hours-quick-links-section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@media screen and (max-width: 1110px){
+    .bc-tabbed-content {
+        margin:0;
+    }   
+}
+
+@media screen and (max-width: 992px){
+    
+    li[role=presentation] a {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-width: 2px;
+    }
+    .tabs-section-new.folder-default ul.nav-tabs li {
+        width: 50%;
+    }
+    .tabs-section-new.folder-default ul.nav-tabs {
+        background-color: #c5bfb0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .library-search {
+        margin: 0 15px;
+    }
+    .tabs-section-new.folder-default ul.nav-tabs {
+        margin: 0;
+
+    }
+    a[role=tab] {
+        font-size: 12px;
+    }
+    .library-search input, #s-lg-guide-search-1692023711288#s-lg-guide-search-1692023711288 {
+        font-size: 14px;    
+    }
+}
+
+

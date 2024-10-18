@@ -1,0 +1,75 @@
+.container-fluid.nosidenav.nopadding {
+	padding: 25px 15px 0 15px !important;
+}
+
+.readMoreWrapper {
+    width: fit-content;
+    text-decoration: none;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:inherit;
+}
+
+.clickable-link {
+    color: inherit;
+}
+
+.clickable-link:hover {
+    color: inherit;
+}
+.clickable-link:after{
+    font-family: monospace;
+    content: '\25B6';
+    color: #85100A;
+    font-size: 12px;
+}
+
+.breadcrumb-wrap > .container-fluid {
+    display: none;
+}
+
+.heading {
+    color: black;
+    padding: 2rem 0;
+    font-family: "utopia-std", serif;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.heading-underbar {
+    background-color: #85100A;
+    height: 0.5rem;
+    width: 6rem;
+    margin-top: 1rem;
+}
+
+.small-underbar {
+    height: 0.3rem;
+    width:3rem;
+}
+.section-background {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 10rem 0;
+}
+
+.section-body {
+    width: 1200px;
+    margin: 0 15px;
+}
+
+.hover-drop-shadow {
+    transition: box-shadow 0.2s;
+}
+
+.hover-drop-shadow:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,.3); 
+}
+
+@media screen and (max-width: 767px){
+    .section-background {
+        padding: 2rem 0 1.5rem 0;
+    }
+}

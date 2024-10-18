@@ -1,0 +1,43 @@
+#explore-background {
+    background-color: #e8ddbf;
+}
+.explore-divs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.explore-divs ul {
+    margin-top: 5px;
+}
+
+.explore-div {
+    color: black;
+    background-color: white;
+    padding: 25px;
+}
+
+h3.explore-title.explore-title { 
+    /* double class for precedence*/
+    font-size: 2rem;
+    color: #501315;
+    font-weight: bold;
+}
+
+#learning-resources a, #collections a, #socialmedia a{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 992px){
+    .explore-divs {
+        gap: 15px;
+    }    
+}
+
+@media screen and (max-width: 767px){
+    .explore-divs {
+        display: flex;
+        flex-direction: column;
+    }
+}

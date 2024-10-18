@@ -1,0 +1,7 @@
+div[id^="s-lg-widget"] li {
+	list-style-type:none;
+	line-height:200%;
+}
+
+div[id^="s-lg-widget"] a {color:maroon;}
+div[id^="s-lg-widget"] a:hover {color:grey;}

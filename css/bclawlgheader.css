@@ -1,0 +1,245 @@
+body {
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.centers {
+	
+}
+
+
+
+.top-bar {
+	background: #8a100b;
+    height: 61px;
+    min-height: 0;
+    border-bottom: solid 1px #dccaa0;
+}
+.container-fluid {
+    max-width: 1230px;
+    padding-left: 12px;
+    padding-right: 12px;
+	margin-right: auto;
+    margin-left: auto;
+	box-sizing: border-box;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.centers header .top-bar .vertical-align {
+    align-items: center;
+}
+body .row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.centers header .top-bar .mobile-logo {
+    margin-top: 8px;
+	padding-right: 12px;
+    padding-left: 12px;
+	float:left;
+}
+
+
+.centers header .top-bar .nav.utility li:first-child {
+    margin-left: -10px;
+}
+.centers header .top-bar .nav.utility li {
+    margin: 0 0 0 14px;
+}
+.centers header .top-bar .nav.utility li:first-child {
+    margin-left: -10px;
+}
+
+.centers header .top-bar .nav.utility li>a {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+    line-height: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.centers header .top-bar .nav.utility li>a:hover {
+	color:#dccaa0;
+	background-color:transparent;
+	
+}
+
+header a {
+	text-decoration:none;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+.centers header .nav-wrap.green {
+    background-color: #07625d;
+}
+
+header .nav-wrap #mainNav>ul>li {
+    margin-left: 10px;
+    position: static;
+}
+
+
+
+
+.centers header .nav-wrap #mainNav>ul>li>a {
+    color: rgb(113, 99, 88);
+    text-shadow: none;
+}
+
+header .nav-wrap #mainNav > ul {
+    /* margin-right: -15px !important; */
+    position: relative;
+}
+
+header .nav-wrap #mainNav>ul>li a {
+    padding: 15px 10px;
+    color: rgb(113, 99, 88);
+    font-size: 16px;
+    line-height: 20px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.85);
+    font-weight: 400;
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    text-transform: uppercase;
+}
+header .nav-wrap #mainNav>ul>li a:hover {
+	color:#fff;
+	background-color:#534741;
+	
+}
+
+
+.centers header .nav-wrap .centerlogo {
+    padding-top: 20px!important;
+    font-family: "utopia-std",sans-serif;
+}
+
+.centers header .nav-wrap .centerlogo a .centerhome {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.centers header .nav-wrap .centerlogo a {
+    color: white;
+}
+.centers header .nav-wrap .centerlogo a:hover {
+	text-decoration:none;
+	color:white;
+	
+}
+.centers header .top-bar .nav.utility {
+    margin-top: 22px;
+    margin-right: 0;
+}
+
+header .nav-wrap #mainNav {
+    /* padding-top: 30px; */
+    margin-left: -20px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+header .nav-wrap #mainNav>ul>li {
+    margin-left: 0;
+}
+}
+
+
+@media screen and (max-width: 1200px) {
+header .nav-wrap #mainNav>ul>li a {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.int-wrap.school-wrap header .nav-wrap #mainNav > ul > li {
+    margin-left: 0px;
+}
+
+
+}
+@media (min-width: 992px){
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-5 {
+    width: 41.66666667%;
+}
+
+
+}
+
+@media (min-width: 768px) {
+.navbar-nav {
+    float: left;
+    margin: 0;
+}	
+	
+.navbar-nav > li {
+    float: left;
+}
+
+.navbar-nav > li {
+    float: left;
+}
+.navbar-right {
+    float: right !important;
+}
+
+
+
+
+}
+
+
+@media (max-width: 766px) /*Custom CSS added for small screens in the absence of true mobile menus - all other CSS derived directly from BC Law design. Set to hide navs, but some formatting left in in case navs need to be displayed. */
+
+{
+
+header .nav-wrap #mainNav {
+    padding-top: 0px;
+	display:none;
+}
+
+.centers header .top-bar .nav.utility {
+    margin-top: 0px;
+    padding-top:10px;
+	display:none;
+	
+}	
+.centers header .top-bar .nav.utility ul.nav {
+	margin-top:0px;
+	
+}	
+}
+
+@media (max-width: 400px)
+{
+	
+.centers header .top-bar .nav.utility {
+    display:none;
+	
+}
+}
+
+
+
