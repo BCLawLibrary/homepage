@@ -1,23 +1,12 @@
-/*-------------------------------------------*\ 
-  about-us.css
-
-  The About Us section introduces the law library.
-  
-  ORGANIZATION:
-      div.intro-background
-      └── div.section-body#intro-body
-          ├── h2.heading
-          └── div.intro-columns  
-              ├── div.intro-text
-              └── div.intro-vanity
-                  └── img.intro-image
-\*-------------------------------------------*/
-
 .intro-background {
   background-color: #f5f2e3;
   padding: 0;
   display: flex;
   justify-content: center;
+}
+
+.intro-columns-wrapper {
+  max-width: 1230px;
 }
 
 .intro-columns {
@@ -30,11 +19,11 @@
 
 .intro-text {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 30px;
 }
 
-.intro-vanity img.intro-image {
+.intro-vanity video {
   width: 100%;
   height: 250px;
   object-fit: cover;
