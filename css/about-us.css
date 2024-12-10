@@ -23,8 +23,26 @@
   line-height: 30px;
 }
 
+.intro-text a {
+  color: black;
+  text-decoration: underline;
+}
+
 .intro-vanity video {
   width: 100%;
   height: 250px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .intro-columns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin: 0;
+  }
+
+  .intro-vanity video {
+    height: 100%;
+  }
 }
