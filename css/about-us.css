@@ -46,3 +46,9 @@
     height: 100%;
   }
 }
+
+@media screen and (max-width: 428px) {
+  .intro-text {
+    font-size: 16px;
+  }
+}
