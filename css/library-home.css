@@ -27,7 +27,7 @@
 }
 
 .breadcrumb-wrap {
-  display: none;
+  display: none !important;
 }
 
 .section-body h2.heading {

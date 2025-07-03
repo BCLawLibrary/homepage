@@ -13,31 +13,20 @@
                   └── tbody
                       └── ...
 \*-------------------------------------------*/
+:root {
+  --bc-gray: #726158;
+}
 
 #all-hours {
   max-width: 100%;
-  margin: 15px 100px 50px 100px;
+  margin: 15px 100px 65px 100px;
   background-color: #f0f0f0;
   color: black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid var(--bc-gray);
 }
 
 .hours {
   max-width: 100%;
-  display: grid;
-  flex-direction: row;
-  grid-template-columns: 1fr 5fr;
-}
-
-a.todays-hours {
-  color: black;
-  font-weight: bold;
-  padding: 10px;
-  border-right: 1px solid black;
-  text-align: center;
-  white-space: nowrap;
-  text-decoration: underline;
 }
 
 #api_hours_today_iid196_lid5008 {
@@ -53,7 +42,7 @@ table.hours-today {
 table.hours-today tbody {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 50px;
+  column-gap: 120px;
   white-space: nowrap;
 }
 
@@ -65,6 +54,12 @@ table.hours-today tbody tr {
 
 table.hours-today tbody th.hours-col-loc {
   font-weight: bold;
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+th.hours-col-loc a {
+  color: black;
 }
 
 table.hours-today tbody td.hours-col-time {
@@ -79,7 +74,8 @@ table.hours-today tbody td.link {
 
 @media screen and (max-width: 1250px) {
   #all-hours {
-    margin: 15px 0 75px 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -102,11 +98,16 @@ table.hours-today tbody td.link {
 
   .hours .todays-hours {
     border-right: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--bc-gray);
   }
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 991px) {
+  #all-hours {
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+  
   table.hours-today tbody {
     display: flex;
     flex-direction: column;
