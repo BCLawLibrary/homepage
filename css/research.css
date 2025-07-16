@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+#research-help-background {
+  background-color: #f5f2e3;
+}
+
+.research-help-items-column {
+  display: grid;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.research-help-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+}
+
+.research-help-image {
+  display: flex;
+}
+
+.research-help-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.research-box-text {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.research-box-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.research-box-blurb {
+  color: black;
+}
+
+.research-box-list {
+  margin: 0;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .research-help-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
