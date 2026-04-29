@@ -47,9 +47,9 @@ table.hours-today tbody {
 }
 
 table.hours-today tbody tr {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   column-gap: 10px;
+  justify-content: space-between;
 }
 
 table.hours-today tbody th.hours-col-loc {
