@@ -1,0 +1,90 @@
+/*-------------------------------------------*\ 
+  quick-links.css
+  
+  The Quick Links & Databases section provides the most commonly
+  used links just below the search bar.  
+  
+  ORGANIZATION:
+      div.section-background#explore-background
+      └── div.section-body#explore-body
+          ├── h2.heading#explore-heading
+          └── div.explore-divs
+              ├── div#learning-resources
+              │   ├── h3.explore-title
+              │   └── ul
+              ├── div#collections
+              └── div#socialmedia
+\*-------------------------------------------*/
+
+#explore-background {
+  background-color: #f5f2e3;
+}
+
+.explore-divs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.explore-div {
+  display: flex;
+}
+
+.explore-margin {
+  min-width: 80px;
+  background-color: #85100a;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.explore-margin-icon {
+  color: #d9534c;
+  font-size: 50px;
+  left: 0px;
+  top: 0px;
+}
+
+.explore-content {
+  color: black;
+  background-color: white;
+  padding: 25px;
+  width: 100%;
+}
+
+.explore-div ul {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.explore-divs .explore-div h3.explore-title {
+  font-size: 1.5 rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.explore-divs .explore-div ul li {
+  margin: 10px 0;
+}
+
+.explore-div ul li a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.explore-div ul li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .explore-divs {
+    gap: 15px;
+  }
+  .explore-divs {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,81 @@
+/*-------------------------------------------*\ 
+  quick-links.css
+  
+  The Quick Links & Databases section provides the most commonly
+  used links just below the search bar.  
+  
+  ORGANIZATION:
+      div.custom-columns-background
+      └── div.custom-columns-wrapper
+          └── div.custom-columns
+              ├── div.column#quick-links
+              │   ├── h3
+              │   └── ul.no-bullet-list
+              │       └── ...
+              └── div.column#databases
+                  ├── h3
+                  └── ul.no-bullet-list
+                      └── ...
+\*-------------------------------------------*/
+
+.custom-columns-background {
+  background-color: #f5f2e3;
+  padding: 0 0 50px 0;
+}
+
+.custom-columns-wrapper {
+  max-width: 1230px;
+  padding: 0 15px 0 15px !important;
+  margin: 0 auto;
+}
+
+.custom-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  padding: 50px;
+  margin: 0 100px;
+  background-color: white;
+  color: black;
+}
+
+.custom-columns h3 {
+  font-weight: bold !important;
+  font-size: 24px !important;
+}
+
+.custom-columns .column .small-underbar {
+  width: 100%;
+}
+
+.custom-columns .column .small-underbar.short {
+  width: 4rem;
+  margin: 20px 0;
+}
+
+.custom-columns .column .no-bullet-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-columns .column .no-bullet-list li {
+  margin-bottom: 4px;
+}
+
+.custom-columns .column .no-bullet-list li a {
+  color: black;
+}
+
+@media screen and (max-width: 1250px) {
+  .custom-columns {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .custom-columns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}

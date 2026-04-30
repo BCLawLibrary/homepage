@@ -1,0 +1,129 @@
+/*-------------------------------------------*\ 
+  hours.css
+  
+  The hours bar provides the library's hours, filled by Springshare's 
+  LibCal API.
+  
+  ORGANIZATION:
+      div#all-hours
+      └── div.hours
+          ├── a.todays-hours <-- link to LibCal page
+          └── div#api_hours_today_iid196_lid5008 <-- filled by LibCal API
+              └── table.hours-today
+                  └── tbody
+                      └── ...
+\*-------------------------------------------*/
+:root {
+  --bc-gray: #726158;
+}
+
+#all-hours {
+  max-width: 100%;
+  margin: 15px 100px 65px 100px;
+  background-color: #f0f0f0;
+  color: black;
+  border: 1px solid var(--bc-gray);
+}
+
+.hours {
+  max-width: 100%;
+}
+
+#api_hours_today_iid196_lid5008 {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+table.hours-today {
+  display: block;
+  width: 100%;
+}
+
+table.hours-today tbody {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 120px;
+  white-space: nowrap;
+}
+
+table.hours-today tbody tr {
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+table.hours-today tbody th.hours-col-loc {
+  font-weight: bold;
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+th.hours-col-loc a {
+  color: black;
+}
+
+table.hours-today tbody td.hours-col-time {
+  text-align: right;
+}
+
+table.hours-today tbody td.link {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 1250px) {
+  #all-hours {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #all-hours {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hours {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #all-hours {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+
+  .hours .todays-hours {
+    border-right: none;
+    border-bottom: 1px solid var(--bc-gray);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #all-hours {
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+  
+  table.hours-today tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  table.hours-today tbody th.hours-col-loc {
+    text-align: left;
+  }
+
+  table.hours-today tbody td.hours-col-time {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  #all-hours {
+    flex-direction: column;
+  }
+}

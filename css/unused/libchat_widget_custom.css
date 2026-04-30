@@ -1,0 +1,14 @@
+#libchat-status-container {
+    text-align: center;
+    font-size: 1.2em;
+}
+#chat-online, #chat-offline {
+    font-weight: bold;
+    font-size:2em;
+}
+#chat-online {
+    color: green;
+}
+#chat-offline {
+    color: red;
+}
