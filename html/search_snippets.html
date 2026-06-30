@@ -1,0 +1,126 @@
+<!-- ALL -->
+<script src="https://library.bc.edu/theme/bcbento/js/typeahead.bundle.min.js" type="text/javascript"></script>
+<script src="/content/dam/bc1/schools/law/js/library/bclawlib-typeahead.js" type="text/javascript"></script>
+
+<div class="library-search search-all">
+    <label for="typeahead" class="accessibility-text">Search articles, books, journals, and more</label> 
+    <div class="search-form">
+        <div>
+            <form method="get" action="https://bc.primo.exlibrisgroup.com/nde/search" id="bcbento-search">
+                <input type="hidden" id="search-tab" name="tab" value="Everything">
+                <input type="hidden" id="search-scope" name="search_scope" value="MyInst_and_CI">
+                <input type="hidden" id="search-vid" name="vid" value="01BC_INST:bclib_nde">
+                <input type="hidden" id="search-lang" name="lang" value="en">
+                <div>
+                    <input type="text" id="typeahead" name="query" placeholder="Find articles, books, journals, & more">
+                </div>
+                <button id="searchAll" class="search-button" type="submit" value="Search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="advanced-wrapper"> 
+<a class="whatAmISearching" href="https://www.bc.edu/content/bc-web/schools/law/sites/students/library/using/searching">What am I searching?</a> | 
+        <a class="advanced" href="https://bc.primo.exlibrisgroup.com/nde/home?vid=01BC_INST:bclib_nde&lang=en&mode=advanced">Advanced Search</a>
+    </div>
+</div>
+
+<!-- BOOKS -->
+
+<div class="library-search">
+<label for="book-search" class="accessibility-text">Search books, media, and more</label>
+<div class="search-form">
+    <div>
+        <form method="get" action="https://bc.primo.exlibrisgroup.com/nde/search" id="bcbento-books" autocomplete="off" onsubmit="resetId('book-search');">
+            <div>    
+                <input type="hidden" id="search-tab" name="tab" value="LibraryCatalog">
+                <input type="hidden" id="search-scope" name="search_scope" value="MyInstitution">
+                <input type="hidden" id="search-vid" name="vid" value="01BC_INST:bclib_nde">
+                <input type="hidden" id="search-lang" name="lang" value="en">
+                <input type="text" id="book-search" class="" name="query" placeholder="Find books, media, & more">
+            </div>
+            <button id="searchBooks" class="search-button" type="submit" value="Search"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>
+<div class="advanced-wrapper">
+<a class="whatAmISearching" href="https://www.bc.edu/content/bc-web/schools/law/sites/students/library/using/searching">What am I searching?</a> | 
+<a class="advanced" href="https://bc.primo.exlibrisgroup.com/nde/home?vid=01BC_INST:bclib_nde&lang=en&mode=advanced">Advanced Search</a>
+</div>
+</div>
+
+<!-- ARTICLES -->
+
+<div class="library-search">
+    <label for="article-search" class="accessibility-text">Search journal articles</label> 
+    <div class="search-form">
+        <div>
+            <form method="get" action="https://bc.primo.exlibrisgroup.com/nde/search" id="bcbento-articles" autocomplete="off">
+                <div>
+                <input type="hidden" id="search-tab" name="tab" value="CentralIndex">
+                <input type="hidden" id="search-scope" name="search_scope" value="CentralIndex">
+                <input type="hidden" id="search-vid" name="vid" value="01BC_INST:bclib_nde">
+                <input type="hidden" id="search-lang" name="lang" value="en">
+                <input type="text" id="article-search" name="query" placeholder="Find journal articles">
+                </div>
+                <button id="searchArticles" class="search-button" type="submit" value="Search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="advanced-wrapper">
+        <a class="whatAmISearching" href="https://www.bc.edu/content/bc-web/schools/law/sites/students/library/using/searching">What am I searching?</a> | 
+        <a class="advanced" href="https://bc.primo.exlibrisgroup.com/nde/home?vid=01BC_INST:bclib_nde&lang=en&mode=advanced">Advanced Search</a>
+    </div>
+</div>
+
+<!-- JOURNALS -->
+
+<div class="library-search">
+    <label for="article-search" class="accessibility-text">Search journals</label> 
+    <div class="search-form">
+        <div>
+            <form method="get" action="https://bc.primo.exlibrisgroup.com/nde/jsearch" id="bcbento-journals" autocomplete="off">
+                <div>
+                    <input type="hidden" id="search-tab" name="tab" value="jsearch_slot">
+                    <input type="hidden" id="search-scope" name="search_scope" value="jsearch_scope">
+                    <input type="hidden" id="search-offset" name="offset" value="0">
+                    <input type="hidden" id="search-vid" name="vid" value="01BC_INST:bclib_nde">
+                    <input type="hidden" id="search-lang" name="lang" value="en">
+                    <input type="text" id="journal-search" name="query" placeholder="Find journals">
+                </div>
+                <button id="searchJournals" class="search-button" type="submit" value="Search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="advanced-wrapper">
+<a class="whatAmISearching" href="https://www.bc.edu/content/bc-web/schools/law/sites/students/library/using/searching">What am I searching?</a>
+    </div>
+</div>
+
+<!-- LibGuides -->
+
+<div class="library-search"> 
+    <label for="lg-search-box" class="accessibility-text">Search research guides</label>
+    <script>
+        springshare_widget_config_1692023711288 = {  link_text: 'Search Box' };
+    </script>
+    <div id="s-lg-widget-1692023711288"></div>
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://lgapi-us.libapps.com/widgets.php?site_id=990&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=1&group_id=0&placeholder_text=Find+law+research+guides&button_text=%3Ci+id%3D%22springshare-search-button%22+class%3D%22fa+fa-search%22%3E%3C%2Fi%3E&widget_height=&widget_width=100%25&config_id=1692023711288";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","s-lg-widget-script-1692023711288");
+    </script>
+
+<!--
+<script>
+window.onload = function () {
+    console.log('going to add class-name');
+  var element = document.getElementById("springshare-search-button");
+  element.parentElement.classList.add("search-button");
+var element2 = document.getElementById("s-lg-widget-1692023711288");
+element2.classList.add("search-form");
+  console.log('added class-name');
+};
+</script> 
+-->
+    <div class="advanced-wrapper">
+        <a class="whatAmISearching" href="https://www.bc.edu/content/bc-web/schools/law/sites/students/library/using/searching">What am I searching?</a>
+    </div>
+</div>
